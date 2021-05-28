@@ -25,3 +25,11 @@ User_Pet = input("What is the name of your pet?\n")
 print("I would name your band "+User_City+" "+User_Pet+"!\n")
 #5. Make sure the input cursor shows on a new line, see the example at:
 #   https://band-name-generator-end.appbrewery.repl.run/
+
+#variables and converting str to int
+num_var = input("Enter a two digit number:")
+num_var1 = int(num_var[0])
+num_var2 = int(num_var[1])
+print(num_var1+num_var2)
+
+print(2**2)
