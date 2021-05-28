@@ -33,3 +33,18 @@ num_var2 = int(num_var[1])
 print(num_var1+num_var2)
 
 print(2**2)
+
+#tip calculator
+#Tip Calculator
+#Bill of $150 add 12% tip
+#tip = 150 times .12
+#add tip back to original bill amount
+#variables
+print("Welcome to the tip calculator!")
+bill_amount = input("What is the bill amount? $")
+tip_amt = input("What percent would you like to tip? e.g. 10, 12, 15: \n")
+parties = input("How many people are paying the bill?\n")
+split_bill_amt = float(bill_amount)/int(parties)
+individual_tip = split_bill_amt*float(int(tip_amt)*.01)
+individual_amt = round(split_bill_amt+individual_tip,2)
+message = print(f"Each member of the party will pay ${individual_amt:.2f}.")
